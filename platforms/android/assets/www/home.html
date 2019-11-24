@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <!--Added jQuery-->
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Include jQuery Mobile stylesheets -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- Include the jQuery library -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Include the jQuery Mobile library -->
+    <!--<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+
+    <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <!--
+        Omar El Tokhy
+        1300207
+        Edited title.
+        -->
+
+    <title>WORKOUT!</title>
+</head>
+<!--
+ Added Background image.
+ -->
+<body class="has-header has-footer align-center cover-200" style="background-image:url(/www/img/image2.jpg)">
+    
+    <div class="page">
+
+        <!--
+    Edited header with menu and exit buttons.
+    -->
+
+        <div class="menu blue-900 cover blend-multiply" id="menuDiscover" style="background-image:url(/img/fitness2.jpg)">
+            <div class="cover align-center">
+                <h1 class="text-white text-huge align-center">Workouts:</h1>
+            </div>
+            <div class="list no-border">
+
+                <div class="item" onclick="openPage('barbell')">
+                    <a class="item space-small">
+                        <div class="right">
+                            <i class="icon ion-chevron-right white"></i>
+                        </div>
+                        <h1 class="text-white">Barbell</h1>
+                    </a>
+                </div>
+
+                <div class="item" onclick="openPage('bodyweight')">
+                    <a class="item space-small">
+                        <div class="right">
+                            <i class="icon ion-chevron-right white"></i>
+                        </div>
+                        <h1 class="text-white">Bodyweight</h1>
+                        <div class="right">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item" onclick="openPage('cardio')">
+                    <a class="item space-small">
+                        <div class="right">
+                            <i class="icon ion-chevron-right white"></i>
+                        </div>
+                        <h1 class="text-white">Cardio</h1>
+                    </a>
+                </div>
+
+                <div class="item" onclick="openPage('dumbell')">
+                    <a class="item space-small">
+                        <div class="right">
+                            <i class="icon ion-chevron-right white"></i>
+                        </div>
+                        <h1 class="text-white">Dumbbell</h1>
+                        <div class="right">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item" onclick="openPage('kettlebell')">
+                    <a class="item space-small">
+                        <div class="right">
+                            <i class="icon ion-chevron-right white"></i>
+                        </div>
+                        <h1 class="text-white">Kettlebell</h1>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="header text-white">
+            <div class="left">
+                <button class="icon ion-navicon-round" onclick="openMenu('menuDiscover')"></button>
+            </div>
+            <h1 class="title align-center">WORKOUT!</h1>
+            <div class="right">
+                <button class="icon ion-android-exit" onclick="logout()"></button>
+            </div>
+        </div>
+
+        <!--
+    Added tabs and content for them.
+    -->
+
+        <div class="content has-header horizontal-align-center cover-200" style="background-image:url(/www/img/image2.jpg)">
+
+        <div class="footer text-white tab">
+            <button class="icon ion-android-list active" onclick="openTab('myTabHome')">Home</button>
+            <button class="icon ion-android-list" onclick="openTab('myTabWorkouts')">Workouts</button>
+            <button class="icon ion-information-circled" onclick="openTab('myTabAbout')">About</button>
+        </div>
+
+        <div class="tab-content active" id="myTabHome">
+            <div class="space"></div>
+            <div class="space"></div>
+            <div class="space"></div>
+            <h2 class="text-huge text-strong text-white align-center text-light">Home</h2>
+            <div class="space"></div>
+            <p class="text-white align-center text-strong">
+                Welcome to my App! This App is meant to be inspiration to people to excercise!
+            </p>
+        </div>
+        <div class="tab-content" id="myTabWorkouts">
+            <div class="space"></div>
+            <div class="space"></div>
+            <div class="space"></div>
+            <h2 class="text-huge text-strong text-white align-center text-light">Workouts</h2>
+            <div class="space"></div>
+            <p class="text-white align-center text-strong">
+                The workouts in this app are well balanced and comes with instructions. There are various different workout options to give people anything they want.
+            </p>
+        </div>
+        <div class="tab-content" id="myTabAbout">
+            <div class="space"></div>
+            <div class="space"></div>
+            <div class="space"></div>
+            <h2 class="text-huge text-strong text-white align-center">About</h2>
+            <div class="space"></div>
+            <p class="text-white align-center text-strong">Name: WORKOUT! App</p>
+            <p class="text-white align-center text-strong">Version: 1.0.0</p>
+            <p class="text-white align-center text-strong">Developer: Omar El Tokhy</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="mobileui/mobileui.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
